@@ -1,11 +1,8 @@
-package com.vti.templaterestfulapi.models2;
+package com.vti.templaterestfulapi.models;
 
-import jakarta.persistence.Entity;
-import jakarta.persistence.Table;
 import lombok.AllArgsConstructor;
 import lombok.Data;
 import lombok.NoArgsConstructor;
-import org.springframework.data.annotation.Id;
 import org.springframework.data.annotation.Transient;
 import org.springframework.data.mongodb.core.mapping.Document;
 
@@ -16,8 +13,8 @@ import java.util.List;
 @NoArgsConstructor
 @AllArgsConstructor
 @Document
-public class Profile {
-    @Id
+public  class Profile {
+    @org.springframework.data.annotation.Id
     private Long id;
 
     @Transient
@@ -28,7 +25,7 @@ public class Profile {
     private String idPerson;
     private String avatar;
     private List<String> listDegreeImage;
-    private List<Subject> listSubject;
+    //private List<Subject> listSubject;
 
 
 

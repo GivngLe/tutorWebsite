@@ -1,11 +1,7 @@
 package com.vti.templaterestfulapi.database;
 
 
-import com.vti.templaterestfulapi.models.ERole;
-import com.vti.templaterestfulapi.models.Role;
-import com.vti.templaterestfulapi.models.User;
-import com.vti.templaterestfulapi.models2.Grade;
-import com.vti.templaterestfulapi.models2.Subject;
+import com.vti.templaterestfulapi.models.*;
 import com.vti.templaterestfulapi.repositories.GradeRepository;
 import com.vti.templaterestfulapi.repositories.RoleRepository;
 import com.vti.templaterestfulapi.repositories.SubjectReponsitory;
