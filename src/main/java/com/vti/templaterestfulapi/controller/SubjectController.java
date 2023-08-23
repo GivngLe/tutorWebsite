@@ -28,4 +28,11 @@ public class SubjectController {
 
 
     }
+    @PostMapping("/findAll")
+    public ResponseEntity<?> findAll() {
+        return ResponseEntity.status(HttpStatus.OK).body(
+                new ResponseObject(200, "Ok",
+                        subjectService.findAll()));
+    }
+
 }

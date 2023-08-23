@@ -31,6 +31,4 @@ public class Profile {
     private List<Subject> listSubject;
 
 
-
-
 }

@@ -1,15 +1,13 @@
 package com.vti.templaterestfulapi.database;
 
 
+import com.vti.templaterestfulapi.models.Category;
 import com.vti.templaterestfulapi.models.ERole;
 import com.vti.templaterestfulapi.models.Role;
 import com.vti.templaterestfulapi.models.User;
 import com.vti.templaterestfulapi.models2.Grade;
 import com.vti.templaterestfulapi.models2.Subject;
-import com.vti.templaterestfulapi.repositories.GradeRepository;
-import com.vti.templaterestfulapi.repositories.RoleRepository;
-import com.vti.templaterestfulapi.repositories.SubjectReponsitory;
-import com.vti.templaterestfulapi.repositories.UserRepository;
+import com.vti.templaterestfulapi.repositories.*;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.CommandLineRunner;
 import org.springframework.context.annotation.Bean;
@@ -25,6 +23,8 @@ public class Database {
 //https://www.devglan.com/spring-boot/spring-boot-mongodb-configuration
     @Autowired
     PasswordEncoder encoder;
+    @Autowired
+    private CategoryRepository categoryRepository;
 
     @Bean
     CommandLineRunner initDatabase(RoleRepository roleRepository,
@@ -186,6 +186,12 @@ public class Database {
 
 
                 }
+
+                Category category1 = new Category();
+                category1 = new Category();
+                category1.setId(1L);
+                category1.setName("jssfnsjfnsdj");
+                categoryRepository.save(category1);
 
 
                 Role role1 = new Role();
